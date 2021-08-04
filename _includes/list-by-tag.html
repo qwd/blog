@@ -1,0 +1,9 @@
+<ul class="tag-list">
+    {% for item in site.tags[include.flag] %}
+    <li>
+        <a href="{{- item.url -}}">{{ item.title }}</a>
+        <span>{{ item.date | date: "%Y-%m-%d" }}</span>
+        {{- item.excerpt | strip_html | markdownify -}}
+    </li>
+    {% endfor %}
+</ul>

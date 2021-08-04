@@ -1,0 +1,47 @@
+---
+title: 和风天气SDK发行说明
+layout: blog
+permalink: /release/sdk/
+---
+
+<blockquote>
+    <p><strong>状态说明</strong></p>
+    {%- for item in site.data.list.status -%}
+    {% assign stat_name = item.name | prepend: "stat-" %}
+    <p><span class="label {{ stat_name }}">{{ site.data.t[page.lang][stat_name] }}</span>&nbsp; {{ item.desc }}</p>
+    {%- endfor -%}
+</blockquote>
+{%- assign release_note = site.data.release-sdk |  sort: "date" | reverse -%}
+{%- for item in release_note -%}
+<h2 id="{{- item.title | slugify -}}">{{ item.title }}</h2>
+<table class="sdk-table">
+    <tbody>
+        <tr>
+            <td>发布时间</td>
+            <td>{{ item.date | date: "%Y-%m-%d" }}</td>
+        </tr>
+        <tr>
+            <td>状态</td>
+            {% assign status = item.status | prepend: "stat-" %}
+            <td><span class="label {{ status }}">{{ site.data.t[page.lang][status] }}</span></td>
+        </tr>
+        {% if item.download -%}
+        <tr>
+            <td>下载</td>
+            <td>
+                {% for dl in item.download -%}
+                <div class="download"><a href="{{ dl.link }}" target="_blank" rel="noopener noreferrer">{{ dl.name }} SDK</a>
+                <span class="md5 small">MD5:{{ dl.md5 }}</span></div>
+                {%- endfor %} 
+            </td>
+        </tr>
+        <tr>
+            <td>开发文档</td>
+            <td><a href="https://dev.qweather.com/docs/ios-sdk/" target="_blank" rel="noopener noreferrer">iOS开发文档</a> | <a href="https://dev.qweather.com/docs/android-sdk/" target="_blank" rel="noopener noreferrer">Android开发文档</a></td>
+        </tr>       
+        {%- endif %}
+    </tbody>
+</table>
+{{ item.text | markdownify }}
+{%- endfor -%}
+

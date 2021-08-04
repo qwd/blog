@@ -1,0 +1,82 @@
+.homepage {
+    // padding-bottom: 40px;
+    margin-bottom: 40px;
+    .pin-post {
+        background-image: linear-gradient(60deg,  #d9e7eb, #ECF2FF, #FBECDC);
+        border-radius: 14px;
+        padding: 20px;
+        margin: 0 0 30px;
+        img {
+            width: 100%;
+        }
+        .outlook {
+            h2 {
+                margin-bottom: 10px;
+                a {
+                    color: $color-dark;
+                }
+            }
+            .meta {
+                margin-bottom: 20px;
+            }
+            .summary {
+                p {
+                    line-height: 1.4;
+                }
+            }
+        }
+    }
+    .post-card {
+        display: block;
+        border-radius: 14px;
+        box-shadow: 0 2px 5px 2px rgba(184,184,184,0.1);
+        background-color: #fff;
+        color: $color-grey;
+        margin-bottom: 30px;
+        .post-img {
+            // height: 225px;
+            background-image: linear-gradient(60deg,  #d9e7eb, #ECF2FF, #FBECDC);
+            background-color: #d9e7eb;
+            border-top-left-radius: 14px;
+            border-top-right-radius: 14px;
+            // overflow: hidden;
+            img {
+                // max-width: 100%;
+                border-top-left-radius: 14px;
+                border-top-right-radius: 14px;
+                width: 100%;
+                // max-height: 100%;
+                display: block;
+            }
+        }
+        .preview {
+            padding: 20px;
+            .post-title {
+                height: 48px;
+                margin-bottom: 5px;
+                h2 {
+                    font-size: 20px;
+                    line-height: 1.2;
+                }
+            }
+            .meta {
+                margin-bottom: 10px;
+                font-size: 1.2rem;
+                height: 20px;
+                line-height: 1.666;
+            }
+            .summary {
+                line-height: 1.6;
+                height: 72px;
+            }
+        }
+    }
+    .pagination {
+        .page_now {
+            display: inline-block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+    }
+}

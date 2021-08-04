@@ -1,0 +1,167 @@
+// main-content 
+.main-content {
+  padding: 40px 30px;
+  margin: 0 auto 40px;
+  max-width: 820px;
+  background-color: $color-white;
+  h2,
+  h3,
+  h4 {
+    margin: 20px 0;
+  }
+
+  img {
+    margin: 10px 0;
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  li {
+    line-height: $line-height;
+  }
+
+  .anchor-link {
+    margin-left: 5px;
+    color: #dadada;
+    &:hover {
+      color: $link-color;
+    }
+  }
+
+  .tag-list {
+    list-style: none;
+    padding-left: 0;
+    font-size: 1.4rem;
+    span {
+      display: block;
+      font-size: 1.2rem;
+      color: $color-grey;
+    }
+    li {
+      margin-bottom: 10px;
+      line-height: 1.4;
+    }
+    a {
+      display: inline-block;
+      font-size: 2rem;
+    }
+    p {
+      line-height: 1.5;
+    }
+  }
+
+  .article-headline {
+    h1 {
+      margin-bottom: 15px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #eee;
+    }
+
+    .meta {
+      display: block;
+      margin-bottom: 20px;
+      color: $color-grey-2;
+    }
+  }
+
+  .release-toc {
+    min-width: 150px;
+    background-color: $color-light;
+    float: right;
+    margin-left: 10px;
+    padding: 5px 10px;
+    ul {
+      list-style: none;
+      padding-left: 0;
+    }
+  }
+
+  .blog-content, .release-content {
+    // external site link style
+    a[href^="http://"]::after,
+    a[href^="https://"]::after,
+    a[href^="//"]::after {
+      content: "";
+      padding-right: 12px;
+      margin-right: 2px;
+      background-image: url("data:image/svg+xml,<svg height='10' width='10' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><path fill='%23066ff5' d='M432,320H400a16,16,0,0,0-16,16V448H64V128H208a16,16,0,0,0,16-16V80a16,16,0,0,0-16-16H48A48,48,0,0,0,0,112V464a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V336A16,16,0,0,0,432,320ZM488,0h-128c-21.37,0-32.05,25.91-17,41l35.73,35.73L135,320.37a24,24,0,0,0,0,34L157.67,377a24,24,0,0,0,34,0L435.28,133.32,471,169c15,15,41,4.5,41-17V24A24,24,0,0,0,488,0Z'/></svg>");
+      background-position: right;
+      background-repeat: no-repeat;
+    }
+
+    // reset internal site link style
+    a[href*="qweather.com"]::after,
+    a[href*="hecdn.net"]::after {
+      content: none;
+      padding-right: 0;
+      margin-right: 0;
+      background-image: none;
+    }
+
+    .metadata {
+      display: block;
+      margin-bottom: 10px;
+      color: $color-grey-2;
+      font-size: 1.2rem;     
+    }
+    .sdk-table {
+      tr {
+        border-top: 1px solid #dee2e6;
+      }
+      tr td:first-child {
+        background-color: #e9ecef;
+        font-weight: bold;
+        width: 20%;
+      }
+      .download {
+        line-height: 2;
+        .md5 {
+          font-family: $code-font-family;
+          margin-left: 5px;
+        }
+      }
+    }
+  }
+
+  .related-post {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px #888 solid;
+  }
+
+  .release-content {
+    .release-card {
+      display: block;
+      border-radius: 14px;
+      box-shadow: 0 2px 5px 2px rgba(184,184,184,0.1);
+      background-color: #ECF2FF;
+      color: $color-grey;
+      margin-bottom: 30px;
+      padding: 20px;
+      min-height: 150px;
+      h2 {
+        margin-top: 0;
+        margin-bottom: 20px;
+      }
+    }
+
+
+  }
+}
+
+
+
+// 40x styly
+.page-404 {
+  margin: 60px 0;
+  text-align: center;
+
+  img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+    height: auto;
+  }
+}

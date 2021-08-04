@@ -1,0 +1,11 @@
+{% assign related-post-by-tag = site.posts | where_exp: "item", "item.url != page.url" | where: "tag", page.tag %}
+<section class="related-post">
+    <h2>相关文章</h2>
+    <ul>
+        {% for item in related-post-by-tag limit: 5 -%}
+        <li>
+            <a href="{{ item.url }}" {% if item.url==page.url %}class="active" {% endif %}>{{ item.title}}</a>
+        </li>
+        {%- endfor %}
+    </ul>
+</section>

@@ -1,0 +1,23 @@
+---
+title: 发行说明
+permalink: /release/
+---
+
+<article class="main-content">
+    <section class="article-headline">
+        <h1>{{ page.title}}</h1>
+    </section>
+    <section class="release-content">
+        <p>浏览和风天气产品和服务的版本更新和发行说明</p>
+        <div class="row">
+            {%- for item in site.data.list.release -%}
+            <div class="col-xs-12 col-sm-12 col-md-6">
+                <a href="{{ item.link }}" class="release-card no-underline">
+                    <h2>{{ item.name }}</h2>
+                    {{- item.desc -}}
+                </a>
+            </div>
+            {%- endfor -%}
+        </div>
+    </section>
+</article>

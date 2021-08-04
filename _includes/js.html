@@ -1,0 +1,26 @@
+<!-- open external links in a new window -->
+<script>
+    function external_new_window() {
+        for (var c = document.getElementsByTagName("a"), a = 0; a < c.length; a++) {
+            var b = c[a];
+            if (b.getAttribute("href") && b.hostname !== location.hostname) {
+                b.target = "_blank";
+                b.rel = "noopener noreferrer";
+            }
+        }
+    }
+    external_new_window();
+</script>
+
+{%- if jekyll.environment == "production" %}
+<!-- baidu analysis -->
+<script>
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?be44c9be9c2c317bd622eff5208ada59";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+{% endif -%}

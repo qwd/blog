@@ -1,0 +1,79 @@
+- title: SDK 4.5
+  ver: 4.5
+  date: 2021-07-20
+  status: active
+  download:
+    - name: iOS
+      link: https://a.hecdn.net/download/api_sdk/QWeather_iOS_SDK_Pub_V4.5.zip
+      md5: ea2d403c374dca335c4948dfece650c3
+    - name: Android
+      link: https://a.hecdn.net/download/api_sdk/QWeather_Public_Android_V4.5.jar
+      md5: 0e6a190dad12ca2904072bee4991a539
+  text: |- 
+   生活指数代码优化 
+- title: SDK 4.4
+  ver: 4.4
+  date: 2021-05-24
+  status: deprecated
+  text: |- 
+   修复若干遗留问题 
+- title: SDK 4.3
+  ver: 4.3
+  date: 2021-02-08
+  status: deprecated
+  text: |- 
+   性能优化 
+- title: SDK 4.2
+  ver: 4.2
+  date: 2020-10-18
+  status: deprecated
+  text: |- 
+   性能优化 
+- title: SDK 4.1
+  ver: 4.1
+  date: 2020-07-09
+  status: deprecated
+  text: |- 
+   修复潜在的数据访问错误 
+- title: SDK 4.0
+  ver: 4.0
+  date: 2020-07-01
+  status: deprecated
+  text: |- 
+   升级至v7版本接口 
+- title: SDK 3.3
+  ver: 3.3
+  date: 2020-01-13
+  status: deprecated
+  text: |- 
+   - 优化性能
+   - 修复并发情况下偶现的bug
+- title: SDK 3.2
+  ver: 3.2
+  date: 2020-01-04
+  status: deprecated
+  text: |- 
+   - 优化性能
+   - 修复bug
+- title: SDK 3.1
+  ver: 3.1
+  date: 2019-06-25
+  status: deprecated
+  text: |- 
+   - 优化性能
+   - 修复bug
+- title: SDK 3.0
+  ver: 3.0
+  date: 2019-04-29
+  status: deprecated
+  text: |- 
+   - 支持认证开发者更多访问量
+   - 优化性能
+   - 修复bug
+- title: SDK 2.4
+  ver: 2.4
+  date: 2019-04-02
+  status: offline
+  text: |- 
+   - 增加切换不同接口地址功能
+

@@ -1,0 +1,63 @@
+submenu:
+  - name: 天气
+    link: https://www.qweather.com
+  - name: 天气地图
+    link: https://map.qweather.com
+  - name: 开发
+    link: https://dev.qweather.com
+  - name: 下载APP
+    link: https://www.qweather.com/app/
+release: 
+  - name: 和风天气APP
+    desc: 和风天气APP、和风天气Pro等应用的版本发行说明。
+    link: /release/app/
+  - name: 和风天气API
+    desc: 和风天气开发平台提供的天气API各个版本发行说明。
+    link: /release/api/
+  - name: 和风天气SDK
+    desc: 和风天气开发平台提供的天气数据SDK各个版本发行说明。
+    link: /release/sdk/
+footer:
+  - group: 
+    name: 天气预报
+    list: 
+      - name: 天气预报
+        link: https://www.qweather.com/weather/
+      - name: 空气质量
+        link: https://www.qweather.com/air/
+      - name: 灾害预警
+        link: https://www.qweather.com/severe-weather/
+      - name: 天气地图
+        link: https://map.qweather.com/
+      - name: 卫星和雷达
+        link: https://www.qweather.com/imagery/
+  - group: 
+    name: 天气开发
+    list: 
+      - name: Web API
+        link: https://dev.qweather.com/docs/api/
+      - name: iOS SDK
+        link: https://dev.qweather.com/docs/ios-sdk/
+      - name: Android SDK
+        link: https://dev.qweather.com/docs/android-sdk/
+      - name: 天气插件
+        link: https://widget.qweather.com/
+      - name: 天气普拉斯
+        link: https://dev.qweather.com/docs/owp/
+  - group: 
+    name: 更多
+    list: 
+      - name: 联系我们
+        link: https://www.qweather.com/contact/
+      - name: 下载APP
+        link: https://www.qweather.com/app/
+        img: /assets/images/app-qr.png
+status:
+  - name: active
+    desc: 正常运行中的服务。
+  - name: deprecated
+    desc: 在新版本发布后，旧版本自动进入“过期”状态。此状态下，服务正常运行，但仅提供必要的问题修复，无新功能增加。“过期”状态一般持续2年。新用户无法使用处于“过期”状态的服务。
+  - name: offline
+    desc: 服务已停止运行且不会再恢复。
+
+    

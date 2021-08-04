@@ -1,0 +1,31 @@
+<nav class="secondary">
+  <div class="container">
+    <div class="logo go-left">
+      <a class="no-underline" href="https://www.qweather.com"><img src="/assets/images/logo-s-light.png" alt="QWeather" width="20"></a>
+    </div>
+    <div class="exlink go-right">
+      <ul>
+        {% for item in site.data.list.submenu -%}
+        <li>
+          <a class="no-underline" href="{{- item.link -}}" target="_blank" rel="noopener noreferrer">{{- item.name -}}</a>
+        </li>
+        {%- endfor %}
+      </ul>
+    </div>
+  </div>
+</nav>
+<nav class="primary">
+  <div class="container">
+    <div class="brand">
+      <a class="no-underline" href="/">
+        <span>{{ site.name }}</span>
+      </a>
+    </div>
+    <div class="menu">
+      <ul>
+        <li {%- if page.ref=="home" %} class="active" {%- endif %}><a href="/">全部文章</a></li>
+        <li {%- if page.url=="/release/" %} class="active" {%- endif %}><a href="/release/">发行说明</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>

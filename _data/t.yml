@@ -1,0 +1,25 @@
+en:
+  tag-news: News
+  tag-app: APP
+  tag-dev: Developer
+  download: Download
+  devdoc: Documentation
+  latest-ver: Latest
+  release-note: Release Note
+  stat-active: Active
+  stat-deprecated: Deprecated
+  stat-lts: LTS
+  stat-offline: Offline
+zh: 
+  tag-news: 新闻
+  tag-app: APP
+  tag-dev: 开发
+  tag-story: 故事
+  download: 下载
+  devdoc: 开发文档
+  latest-ver: 最新版本
+  release-note: 发行说明
+  stat-active: 正常
+  stat-deprecated: 过期
+  stat-lts: 长期维护
+  stat-offline: 下线

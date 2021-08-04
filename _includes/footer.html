@@ -1,0 +1,44 @@
+<footer>
+  <div class="container">
+    <div class="footer-content">
+      <div class="row">
+        <div class="brand col-xs-12 col-sm-12 col-md-5 col-lg-6">
+          <div class="logo">
+            <a class="no-underline" href="{{ site.url }}">
+              <img src="/assets/images/logo-s-dark.png" width="30" alt="QWeather Logo" />
+              <h3>{{ site.name }}</h3>
+            </a>
+          </div>
+            <div class="goto-qw">
+              <a class="no-underline" href="https://www.qweather.com" target="_blank" role="button" rel="noopener noreferrer">查询在线天气？</a>
+            </div>
+        </div>
+        <div class="products-list col-xs-12 col-sm-12 col-md-7 col-lg-6">
+              <div class="row">
+                {%- for group in site.data.list.footer -%}
+                <div class="col-xs-4 col-sm-4 col-md-4">
+                  <h3>{{ group.name }}</h3>
+                  <ul>
+                    {%- for item in group.list -%}
+                    <li>
+                      <a href="{{ item.link }}" target="_blank" rel="noopener noreferrer">{{ item.name }}</a>
+                    {% if item.img -%}
+                    <img src="{{ item.img }}" alt="" width="60">
+                    {%- endif %}
+                  </li>
+                    {%- endfor %}
+                  </ul>
+                </div>
+                {%- endfor %}
+              </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-6">2021 &copy; <a href="https://www.qweather.com" target="_blank" rel="noopener noreferrer"><strong>QWeather</strong></a> · <a rel="license noopener noreferrer" href="http://creativecommons.org/licenses/by/4.0/">知识共享署名 4.0 国际许可协议</a></div>
+        <div class="license col-xs-12 col-sm-12 col-md-6 text-right"><a href={{ site.icp.url }} target="_blank" rel="noopener noreferrer">{{ site.icp.number }}</a> · <a href={{ site.nis.url }} target="_blank" rel="noopener noreferrer">{{ site.nis.number }}</a></div>
+      </div>
+    </div>
+  </div>
+</footer>

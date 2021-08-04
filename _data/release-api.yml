@@ -1,0 +1,137 @@
+- title: Web API v7
+  ver: v7
+  date: 2020-07-06
+  status: active
+  doc: https://dev.qweather.com/docs/api/
+  text: |-   
+   v7版本大幅增加了数据内容，并确定了以地理位置为基础的数据获取方式，提供了大量新功能和新数据：
+   
+   **新数据：** 
+   
+   - 海外城市增加至15万+
+   - 独立的日出日落、月升月落和月相接口
+   - 增加15天预报
+   - 增加生活指数预报，部分生活指数支持海外地区
+   - 增加空气质量历史数据
+   - 增加灾害预警列表
+   - 扩展更多数据接口中的数据项目，例如预报接口增加白天和夜间风力风向等等。
+   
+   **新功能：**
+   
+   - 所有接口采用gzip压缩，大幅减少带宽流量，提高接口获取速度
+   - 自动转换夏令时，开发者不需要对处于夏令时国家的时间做出调整
+   - 相同类型的数据，可以单独调取不同种类的数据，例如天气预报可制定调取3天预报或10天预报
+   - 历史数据现在可以查询最近10天的天气或空气质量
+   - 增加每项数据单独的发布时间
+   - 更易理解的API状态码
+   - 每个API数据应用可增加10个KEY
+   - 商业版API支持全球自动路由
+   
+   完整的更新内容请参考[官方公告](/post/webapi-v7-released/)
+- title: GeoAPI v2
+  ver: v2
+  date: 2020-07-06
+  status: active
+  doc: https://dev.qweather.com/docs/api/geo/
+  text: |- 
+   1. 新增POI信息的查询：用于查询景点、港口等POI信息 
+   2. 新增POI范围查询：可以根据坐标点半径查询所有POI信息
+   3. 增加若干城市信息字段 
+   
+   完整的更新内容请参考[官方公告](/post/geoapi-v2-released/)
+- title: GeoAPI v1
+  ver: v1
+  date: 2018-04-09
+  status: deprecated
+  eol: 2022-12-31
+  doc: https://dev.qweather.com/docs/api/geo/
+  text: |-   
+   GeoAPI v1 功能包括：
+   
+   * 模糊搜索：支持中英文模糊搜索，可设置搜索范围和返回结果的数量
+   * 城市范围可控：可设置搜索全球或单独某一个国家
+   * 返回结果数量：可自定义返回模糊搜索的结果数量
+   * 支持IP、经纬度坐标和中国AD Code查询
+   * 热门城市列表：可查询中国或全球热门城市列表
+   * 多语言：支持多远返回数据
+   
+   完整的更新内容请参考[官方公告](/post/geoapi-v1-released/) 
+- title: Web API s6
+  ver: s6
+  date: 2017-10-26
+  status: deprecated
+  eol: 2022-12-31
+  doc: https://dev.qweather.com/docs/legacy/api/s6/
+  text: |-   
+   s6版本主要提升了服务、网络性能和新数据：
+   
+   - 增加到了57项数据
+   - 单一接口的全国平均响应时间在38ms左右，最快3ms即可获取到数据
+   - 并发量，目前在和风天气为全球用户每天提供的上亿次服务中，几个核心节点（中国、美国、新加坡、英国）都能确保百万级并发水平
+   - 新增海外6个数据节点
+   
+   完整的更新内容请参考[官方公告](/post/webapi-s6-released/)
+- title: Web API v5
+  ver: v5
+  date: 2016-11-06
+  status: offline
+  eol: 2021-06-30
+  doc: https://dev.qweather.com/docs/legacy/api/s6/
+  text: |-   
+   v5版新的功能包括：
+   
+   - 支持多语言
+   - 支持中国、亚洲、欧洲和北美四大数据中心节点
+   - 并发量，目前在和风天气为全球用户每天提供的上亿次服务中，几个核心节点（中国、美国、新加坡、英国）都能确保百万级并发水平
+   - 新增海外6个数据节点
+   - 增加2010年至今历史天气数据的逐小时天气数据
+   - 增加逐天预报最长达到10天
+   - 增加每小时天气状况
+   - 增加月升、月落数据
+   - 增加UV指数
+   - 增加模糊搜索功能
+   - 修复X3遗留BUG
+   
+   完整的更新内容请参考[官方公告](/post/webapi-v5-released/)  
+- title: Web API x3
+  ver: x3
+  date: 2015-04-12
+  status: offline
+  eol: 2019-03-31
+  doc: https://dev.qweather.com/docs/legacy/api/s6/
+  text: |-   
+   API x3版本是首个面向公众的API服务，包括的功能：
+   
+   - 支持实况天气、空气质量、生活指数、灾害预警、天气预报等数据
+   - 支持中英文
+   - 支持国内市县区及5000个热门海外城市
+- title: API v2
+  ver: v2
+  date: 2015-02-14
+  status: offline
+  eol: 2020-12-31
+  text: |-   
+   v2版本是第二个企业独立部署版：
+   
+   - 内存占用减少50%
+   - 使用Redis替换MongoDB
+   - 支持集群部署
+   - 支持接口转发
+   - 支持自定义字段
+   - 支持更多天气数据
+   - 支持中英文
+   - 支持热门海外城市数据
+- title: API v1
+  ver: v1
+  date: 2014-01-28
+  status: offline
+  eol: 2019-12-31
+  text: |-
+   独立部署的企业天气API服务：
+
+   - 支持Linux和Windows平台
+   - 一键安装和部署
+   - 基于浏览器的配置管理
+   - 支持MongoDB
+   - 支持MySql
+   - 支持实况天气、逐天预报、天气指数等气象数据   

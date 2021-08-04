@@ -1,0 +1,17 @@
+---
+layout: html
+---
+<article class="main-content">
+    <section class="article-headline">
+        <h1>{{ page.title}}</h1>
+        {% if page.date or page.tag -%}
+        {% include post-meta.html %}
+        {%- endif %}
+    </section>
+    <section class="blog-content">
+        {{ content }}
+    </section>
+    {% if page.is_post == true -%}
+    {% include related-post.html %}
+    {%- endif %}
+</article>
