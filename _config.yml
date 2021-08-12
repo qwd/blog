@@ -30,7 +30,7 @@ defaults:
       path: pages
       type: pages
     values:
-      layout: html
+      layout: page
       lang: zh
       seo:
         type: webpage

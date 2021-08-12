@@ -3,12 +3,9 @@ layout: html
 ---
 <article class="main-content">
     <section class="article-headline">
-        {% include atom-feed.html %}
         <h1>{{ page.title}}</h1>
-        {% include post-meta.html %}
     </section>
-    <section class="blog-content">
+    <section class="page-content">
         {{ content }}
     </section>
-    {% include related-post.html %}
 </article>
