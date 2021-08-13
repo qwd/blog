@@ -3,15 +3,31 @@ layout: html
 ---
 <article class="main-content">
     <section class="article-headline">
+        <div class="headline-feed-icon go-right">
+            <a href="/atom.xml" title="使用Atom订阅" class="no-underline"><span class="bi-rss-fill"></span></a>
+        </div>
         <h1>{{ page.title}}</h1>
-        {% if page.date or page.tag -%}
-        {% include post-meta.html %}
-        {%- endif %}
+        <div class="meta">
+            <span class="post-date">{{ page.date | date: "%Y-%m-%d" }}</span>
+            {% assign post_tag = page.tags %}
+            {%- for item in post_tag -%}
+            {%- assign lang_tag = item | prepend: "tag-" -%}
+            <a href="/{{- item -}}/" class="no-underline"><span class="label tag">{{ site.data.t[page.lang][lang_tag] }}</span></a>
+            {%- endfor %}
+        </div>
     </section>
     <section class="blog-content">
         {{ content }}
     </section>
-    {% if page.is_post == true -%}
-    {% include related-post.html %}
-    {%- endif %}
+    <section class="related-post">
+        {% assign related-post-by-tag = site.posts | where_exp: "item", "item.url != page.url" | where: "tag", page.tag %}
+        <h2>相关文章</h2>
+        <ul>
+            {% for item in related-post-by-tag limit: 5 -%}
+            <li>
+                <a href="{{ item.url }}" {% if item.url==page.url %}class="active" {% endif %}>{{ item.title}}</a>
+            </li>
+            {%- endfor %}
+        </ul>
+    </section>
 </article>

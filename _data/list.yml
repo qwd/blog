@@ -1,11 +1,11 @@
 submenu:
-  - name: 天气
+  - name: 天气预报
     link: https://www.qweather.com
   - name: 天气地图
     link: https://map.qweather.com
   - name: 开发
     link: https://dev.qweather.com
-  - name: 下载APP
+  - name: <span class="bi-phone"></span>下载APP
     link: https://www.qweather.com/app/
 release: 
   - name: 和风天气APP
@@ -51,7 +51,8 @@ footer:
         link: https://www.qweather.com/contact/
       - name: 下载APP
         link: https://www.qweather.com/app/
-        img: /assets/images/app-qr.png
+      - name: Atom订阅
+        link: /atom.xml
 status:
   - name: active
     desc: 正常运行中的服务。

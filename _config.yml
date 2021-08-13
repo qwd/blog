@@ -21,12 +21,16 @@ webmaster_verifications:
 excerpt_separator: <!-- more -->
 paginate: 9
 
+feed:
+  path: atom.xml
+  posts_limit: 20
+
 defaults:
   - scope:
       path: pages
       type: pages
     values:
-      layout: html
+      layout: page
       lang: zh
       seo:
         type: webpage
@@ -53,3 +57,4 @@ plugins:
 - jekyll-sitemap
 - jekyll-redirect-from
 - jekyll-paginate
+- jekyll-feed
