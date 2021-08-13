@@ -80,21 +80,20 @@
     a[href^="http://"]::after,
     a[href^="https://"]::after,
     a[href^="//"]::after {
-      content: "";
-      padding-right: 12px;
+      font-family: "bootstrap-icons" !important;
+      font-size: 85%;
+      content: "\f1c5";
+      margin-left: 2px;
       margin-right: 2px;
-      background-image: url("data:image/svg+xml,<svg height='10' width='10' xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><path fill='%23066ff5' d='M432,320H400a16,16,0,0,0-16,16V448H64V128H208a16,16,0,0,0,16-16V80a16,16,0,0,0-16-16H48A48,48,0,0,0,0,112V464a48,48,0,0,0,48,48H400a48,48,0,0,0,48-48V336A16,16,0,0,0,432,320ZM488,0h-128c-21.37,0-32.05,25.91-17,41l35.73,35.73L135,320.37a24,24,0,0,0,0,34L157.67,377a24,24,0,0,0,34,0L435.28,133.32,471,169c15,15,41,4.5,41-17V24A24,24,0,0,0,488,0Z'/></svg>");
-      background-position: right;
-      background-repeat: no-repeat;
     }
 
     // reset internal site link style
     a[href*="qweather.com"]::after,
     a[href*="hecdn.net"]::after {
       content: none;
-      padding-right: 0;
+      font-family: $font-family;
       margin-right: 0;
-      background-image: none;
+      margin-left: 0;
     }
 
     .metadata {

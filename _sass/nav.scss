@@ -8,14 +8,18 @@ nav {
     ul {
       list-style: none;
       margin: 0;
+      padding-left: 0;
       float: right;
     }
     li {
       float: left;
-      margin-left: 10px;
+      margin-left: 20px;
       line-height: 1.428;
     }
     a {
+      color: #c3c3c3;
+    }
+    a:hover {
       color: #fff;
     }
     .logo {
