@@ -1,10 +1,8 @@
 User-agent: *
 Sitemap: https://blog.qweather.com/sitemap.xml
 Disallow: /404.html
-Disallow: /en/404.html
-Disallow: /403.html
-Disallow: /en/403.html
-Disallow: /redirects*
+Disallow: /page*/
+Disallow: /redirects.json$
 Disallow: /redirect/*
 Disallow: /assets/css/*
 Disallow: /assets/js/*
