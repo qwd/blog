@@ -1,3 +1,16 @@
+- title: SDK 4.6
+  ver: 4.6
+  date: 2021-09-03
+  status: active
+  download:
+    - name: iOS
+      link: https://a.hecdn.net/download/api_sdk/QWeather_iOS_SDK_Pub_V4.5.zip
+      md5: ea2d403c374dca335c4948dfece650c3
+    - name: Android
+      link: https://a.hecdn.net/download/api_sdk/QWeather_Public_Android_V4.6.jar
+      md5: ba57000ba9539de9fef23ce07810ad17
+  text: |- 
+   迁移至Android X 
 - title: SDK 4.5
   ver: 4.5
   date: 2021-07-20
