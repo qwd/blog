@@ -1,3 +1,9 @@
+- title: QWeather APP 3.1.1
+  ver: 3.1.1
+  date: 2021-09-07
+  text: |-
+   1. 修复在iPad mini中有可能显示错误的问题
+   2. 修复其他微小问题
 - title: QWeather APP 3.1.0
   ver: 3.1.0
   date: 2021-08-13
