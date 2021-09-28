@@ -3,7 +3,6 @@ title: 和风天气APP macOS版发布
 tag: app
 excerpt: 随着2021年春节脚步的逐渐接近，我们很高兴的通知大家，和风天气APP macOS版正式发布了！
 image: /assets/upload/qw-app-for-mac-v1-dark.jpg
-pin: true
 ---
 
 ![QWeather for mac](/assets/upload/qw-app-for-mac-v1-dark.jpg)
