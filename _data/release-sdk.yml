@@ -1,10 +1,25 @@
-- title: SDK 4.6
-  ver: 4.6
-  date: 2021-09-03
+- title: SDK 4.7
+  ver: 4.7
+  date: 2021-11-12
   status: active
   download:
     - name: iOS
-      link: https://a.hecdn.net/download/api_sdk/QWeather_iOS_SDK_Pub_V4.5.zip
+      link: https://a.hecdn.net/download/api_sdk/QWeather_iOS_SDK_Pub_V4.7.zip
+      md5: 8697e08235400ee99890755ae68060da
+    - name: Android
+      link: https://a.hecdn.net/download/api_sdk/QWeather_Public_Android_V4.7.jar
+      md5: d9ba366fed777963d24f8162da2f7f7b
+  text: |- 
+   1. 支持新的天气图标代码
+   2. 支持月相图标代码
+   3. 支持新的预警类型ID
+- title: SDK 4.6
+  ver: 4.6
+  date: 2021-09-03
+  status: deprecated
+  download:
+    - name: iOS
+      link: https://a.hecdn.net/download/api_sdk/QWeather_iOS_SDK_Pub_V4.6.zip
       md5: ea2d403c374dca335c4948dfece650c3
     - name: Android
       link: https://a.hecdn.net/download/api_sdk/QWeather_Public_Android_V4.6.jar
@@ -14,7 +29,7 @@
 - title: SDK 4.5
   ver: 4.5
   date: 2021-07-20
-  status: active
+  status: deprecated
   download:
     - name: iOS
       link: https://a.hecdn.net/download/api_sdk/QWeather_iOS_SDK_Pub_V4.5.zip
