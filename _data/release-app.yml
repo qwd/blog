@@ -1,3 +1,8 @@
+- title: QWeather APP 3.2.1
+  ver: 3.2.1
+  date: 2021-11-17
+  text: |-
+   修复问题：在iOS15.1中可能出现的一些UI问题。
 - title: QWeather APP 3.2.0
   ver: 3.2.0
   date: 2021-11-12
