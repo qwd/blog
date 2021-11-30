@@ -1,3 +1,13 @@
+- title: QWeather APP 3.2.3
+  ver: 3.2.3
+  date: 2021-11-23
+  text: |-
+   修复问题：iOS12和iOS10中的天气地图可能会出现闪退的问题。
+- title: QWeather APP 3.2.2
+  ver: 3.2.2
+  date: 2021-11-20
+  text: |-
+   修复问题：部分机型逐天预报中月升月落时间显示错误。
 - title: QWeather APP 3.2.1
   ver: 3.2.1
   date: 2021-11-17
