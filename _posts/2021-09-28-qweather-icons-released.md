@@ -2,7 +2,7 @@
 title: 和风天气图标已发布
 tag: dev
 excerpt: 和风天气图标和字体是一套漂亮的天气图标与天气图标字体，使用SVG格式，方便嵌入到网站或APP中。和风天气图标是开源项目，你可以免费的用于任何项目或自由的对这些图标进行再创作。
-image: assets/upload/qweather-icons-screenshot1610.png
+image: /assets/upload/qweather-icons-screenshot1610.png
 pin: true
 ---
 

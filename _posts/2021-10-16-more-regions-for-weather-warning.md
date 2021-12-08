@@ -2,7 +2,7 @@
 title: 天气预警支持更多国家或地区
 tag: dev
 excerpt: 我们扩大了天气预警支持的范围，陆续已经支持超过40个国家或地区，同时预警类型也接近100种。
-image: assets/upload/more-regions-warning.jpg
+image: /assets/upload/more-regions-warning.jpg
 ---
 
 近期我们扩大了天气预警支持的范围，陆续已经支持[超过40个国家或地区](https://dev.qweather.com/docs/resource/warning-info/#supported-regions)，同时[预警类型也接近100种](https://dev.qweather.com/docs/resource/warning-info/#warning-type)。
