@@ -42,6 +42,15 @@ defaults:
       lang: zh
       is_post: true
       permalink: "/post/:slug/"
+  - scope:
+      path: _posts/announce
+      type: posts
+    values:
+      layout: blog
+      hidden: true
+      tag: announce
+      lang: zh
+      permalink: "/announce/:slug/"
 sass:
   sass_dir: _sass
   style: compressed

@@ -19,6 +19,7 @@ layout: html
     <section class="blog-content">
         {{ content }}
     </section>
+    {%- if page.tag != "announce" -%}
     <section class="related-post">
         {% assign related-post-by-tag = site.posts | where_exp: "item", "item.url != page.url" | where: "tag", page.tag %}
         <h2>相关文章</h2>
@@ -30,4 +31,5 @@ layout: html
             {%- endfor %}
         </ul>
     </section>
+    {%- endif -%}
 </article>

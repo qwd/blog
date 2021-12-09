@@ -31,8 +31,7 @@ redirect_from: /en/
     </div>  
     {%- endif -%}
     <div class="all-post row">
-      {%- assign only_post = paginator.posts | where_exp: "item", "item.tag != 'release'" -%}
-      {%- for item in only_post %}
+      {%- for item in paginator.posts %}
       <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
         <a class="post-card no-underline" href="{{- item.url -}}" title="{{ item.title }}">
           <div class="post-img">
@@ -63,4 +62,16 @@ redirect_from: /en/
       {% endif %}
     </div>
   </div>
+</div>
+
+
+<div>
+  {%- assign post = paginator.posts | where_exp: "item", "item.tag != 'announce'" -%}
+  {% for item in post %}
+    <ul>
+      <li>
+        {{ item.title }}
+      </li>
+    </ul>
+  {% endfor %}
 </div>
