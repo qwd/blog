@@ -3,6 +3,7 @@ layout: html
 lang: zh
 ref: home
 redirect_from: /en/
+description: 和风天气官方博客，了解和风天气的最新动态、软件和服务的发行说明。
 ---
 <div class="homepage">
   <div class="container">
@@ -31,8 +32,7 @@ redirect_from: /en/
     </div>  
     {%- endif -%}
     <div class="all-post row">
-      {%- assign only_post = paginator.posts | where_exp: "item", "item.tag != 'release'" -%}
-      {%- for item in only_post %}
+      {%- for item in paginator.posts %}
       <div class="col-xs-12 col-sm-12 col-md-6 col-lg-4">
         <a class="post-card no-underline" href="{{- item.url -}}" title="{{ item.title }}">
           <div class="post-img">

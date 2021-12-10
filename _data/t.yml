@@ -2,6 +2,7 @@ en:
   tag-news: News
   tag-app: APP
   tag-dev: Developer
+  tag-announce: Announcement
   download: Download
   devdoc: Documentation
   latest-ver: Latest
@@ -15,6 +16,7 @@ zh:
   tag-app: APP
   tag-dev: 开发
   tag-story: 故事
+  tag-announce: 公告
   download: 下载
   devdoc: 开发文档
   latest-ver: 最新版本
