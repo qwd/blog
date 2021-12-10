@@ -3,6 +3,7 @@ layout: html
 lang: zh
 ref: home
 redirect_from: /en/
+description: 和风天气官方博客，了解和风天气的最新动态、软件和服务的发行说明。
 ---
 <div class="homepage">
   <div class="container">
@@ -62,16 +63,4 @@ redirect_from: /en/
       {% endif %}
     </div>
   </div>
-</div>
-
-
-<div>
-  {%- assign post = paginator.posts | where_exp: "item", "item.tag != 'announce'" -%}
-  {% for item in post %}
-    <ul>
-      <li>
-        {{ item.title }}
-      </li>
-    </ul>
-  {% endfor %}
 </div>

@@ -1,5 +1,13 @@
 ---
 title: 官方公告
 permalink: /announce/
+seo: false
 ---
-{% include list-by-tag.html flag="announce" %}
+
+<ul>
+    {% for item in site.tags.announce %}
+    <li>
+        <a href="{{- item.url -}}">{{ item.title }}</a>&nbsp; <span class="small">{{ item.date | date: "%Y-%m-%d" }}</span>
+    </li>
+    {% endfor %}
+</ul>

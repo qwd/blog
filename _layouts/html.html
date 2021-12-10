@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- title/description/etc... -->
-    {% seo %}
+    {%- if page.seo == false %}
+    <title>{{ page.title }} | {{ site.name }}</title>
+    <meta name="robots" content="noindex">    
+    {% else %}
+    {% seo %}    
+    {% endif -%}
     <!-- QWeather APP AppStore -->
     <meta name="apple-itunes-app" content="app-id=1461458147, app-argument=weather" />
     <!-- favicons -->

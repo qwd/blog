@@ -48,6 +48,7 @@ defaults:
     values:
       layout: blog
       hidden: true
+      seo: false
       tag: announce
       lang: zh
       permalink: "/announce/:slug/"
