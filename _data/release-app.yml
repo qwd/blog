@@ -1,3 +1,10 @@
+- title: QWeather APP 3.3.0
+  ver: 3.3.0
+  date: 2022-01-28
+  text: |-
+   - 新功能：现在高级版订阅同适用于macOS啦！如果你已经订阅了高级版，那么同样在macOS上也可以享受同样的功能。详情参考<https://blog.qweather.com/post/new-maoos-app-subscription/>
+   - 修复问题：修复若干遗留问题。
+   - 春节快乐~~~
 - title: QWeather APP 3.2.3
   ver: 3.2.3
   date: 2021-11-23
