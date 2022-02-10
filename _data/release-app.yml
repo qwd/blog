@@ -1,3 +1,11 @@
+- title: QWeather APP 3.3.1
+  ver: 3.3.1
+  date: 2022-02-10
+  text: |-
+   修复问题：
+   1. macOS菜单栏天气首次加载缓慢
+   2. iPadOS在关闭地图后有可能出现地图播放器
+   3. 一些文字错误
 - title: QWeather APP 3.3.0
   ver: 3.3.0
   date: 2022-01-28
