@@ -1,3 +1,16 @@
+- title: QWeather APP 3.3.4
+  ver: 3.3.4
+  date: 2022-03-20
+  text: |-
+   提高页面加载速度并修复bug：
+   1. iPad隐藏地图后，预警信息可能无法正常显示
+   2. Apple Watch重启后，复杂表盘功能可能显示不正确
+   3. 风向图标错误显示
+- title: QWeather APP 3.3.2
+  ver: 3.3.3
+  date: 2022-03-01
+  text: |-
+   - 问题修复：地图气泡在设置华氏度和摄氏度时的错误
 - title: QWeather APP 3.3.2
   ver: 3.3.2
   date: 2022-02-22
