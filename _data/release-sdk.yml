@@ -1,7 +1,20 @@
+- title: SDK 4.9
+  ver: 4.9
+  date: 2022-04-22
+  status: active
+  download:
+    - name: iOS
+      link: https://a.hecdn.net/download/api_sdk/QWeather_iOS_SDK_Pub_V4.9.zip
+      md5: cfed85d7331b1b475c34d249170c1469
+    - name: Android
+      link: https://a.hecdn.net/download/api_sdk/QWeather_Public_Android_V4.9.jar
+      md5: 8035a5b45e9cdc570d39b2a1b1439dfe
+  text: |- 
+   修复问题
 - title: SDK 4.7
   ver: 4.7
   date: 2021-11-12
-  status: active
+  status: deprecated
   download:
     - name: iOS
       link: https://a.hecdn.net/download/api_sdk/QWeather_iOS_SDK_Pub_V4.7.zip
@@ -79,21 +92,21 @@
 - title: SDK 3.2
   ver: 3.2
   date: 2020-01-04
-  status: deprecated
+  status: offline
   text: |- 
    - 优化性能
    - 修复bug
 - title: SDK 3.1
   ver: 3.1
   date: 2019-06-25
-  status: deprecated
+  status: offline
   text: |- 
    - 优化性能
    - 修复bug
 - title: SDK 3.0
   ver: 3.0
   date: 2019-04-29
-  status: deprecated
+  status: offline
   text: |- 
    - 支持认证开发者更多访问量
    - 优化性能
