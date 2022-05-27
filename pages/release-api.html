@@ -13,25 +13,15 @@ permalink: /release/api/
 </blockquote>
 {%- assign release_note = site.data.release-api |  sort: "date" | reverse -%}
 {%- for item in release_note -%}
-<h2 id="{{- item.title | slugify -}}">{{ item.title }}</h2>
-<table>
-    <thead>
-        <tr>
-            <th>发布时间</th>
-            <th>状态</th>
-            <th>停止时间</th>
-            <th>文档</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>{{ item.date | date: "%Y-%m-%d" }}</td>
-            {% assign status = item.status | prepend: "stat-" %}
-            <td><span class="label {{ status }}">{{ site.data.t[page.lang][status] }}</span></td>
-            <td>{% if item.eol -%}{{ item.eol | date: "%Y-%m-%d" }}{%- else -%}NA{%- endif %}</td>
-            <td>{% if item.doc -%}<a href="{{ item.doc }}" target="_blank" rel="noopener noreferrer">查看文档</a>{%- else -%}NA{%- endif %}</td>
-        </tr>
-    </tbody>
-</table>
-{{ item.text | markdownify }}
+<h2 id="{{- item.product | append: ' API ' | append: item.ver | slugify -}}">{{ item.product | append: ' API ' | append: item.ver }}</h2>
+<div class="metadata">
+    <span>{{ item.date | date: "%Y-%m-%d" }}</span>
+    {%- if item.status -%}
+    {% assign status = item.status | prepend: "stat-" %}
+    <span class="label {{ status }}">{{ site.data.t[page.lang][status] }}</span>       
+    {%- endif -%}
+</div>
+<div class="release-content">
+    {{ item.text | markdownify }}
+</div>
 {%- endfor -%}

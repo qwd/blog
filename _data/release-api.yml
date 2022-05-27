@@ -1,7 +1,56 @@
-- title: Web API v7
-  ver: v7
+- ver: 7.9
+  product: Weather
+  date: 2022-01-31
+  text: |-
+   - 天气预警新增`certainty`和`urgency`数据。
+   - 巴西、科威特和南非天气预警更新。
+- ver: 7.8
+  product: Weather
+  date: 2022-01-18
+  text: |-
+   - 从2022年3月1日起，我们将陆续在API中强制使用gzip压缩，不再支持返回未经压缩的数据。
+- ver: 7.7
+  product: Weather
+  date: 2021-12-16
+  text: |-
+   - 新增30天预报。
+   - 格点天气中新增风向角度数据。
+- ver: 7.6
+  product: Weather
+  date: 2021-12-14
+  text: |-
+   - 新增太阳辐照数据。
+- ver: 7.5
+  product: Weather
+  date: 2021-11-12
+  text: |-
+   - 新增天气图标代码。
+   - 在月升月落和月相/逐天预报接口中，新增moonPhase.icon字段。
+   - 使用新的预警类型ID，原预警类型ID将在2021年12月31日后不再使用。
+- ver: 7.4
+  product: Weather
+  date: 2021-08-30
+  text: |-
+   - 欧洲天气预警更新。
+- ver: 7.3
+  product: Weather
+  date: 2021-02-25
+  text: |-
+   - 格点数据统一为UTC时间发布。
+- ver: 7.2
+  product: Weather
+  date: 2020-08-09
+  text: |-
+   - 格点数据已经覆盖全球。
+   - 格点数据统一为UTC时间发布。
+- ver: 7.1
+  product: Weather
+  date: 2020-07-10
+  text: |-
+   - 天气预警增加`sender`、`typeName`和`related`字段。
+- ver: 7.0
+  product: Weather
   date: 2020-07-06
-  status: active
   doc: https://dev.qweather.com/docs/api/
   text: |-   
    v7版本大幅增加了数据内容，并确定了以地理位置为基础的数据获取方式，提供了大量新功能和新数据：
@@ -28,10 +77,9 @@
    - 商业版API支持全球自动路由
    
    完整的更新内容请参考[官方公告](/post/webapi-v7-released/)
-- title: GeoAPI v2
-  ver: v2
+- ver: 2.0
+  product: Geo
   date: 2020-07-06
-  status: active
   doc: https://dev.qweather.com/docs/api/geo/
   text: |- 
    1. 新增POI信息的查询：用于查询景点、港口等POI信息 
@@ -39,8 +87,8 @@
    3. 增加若干城市信息字段 
    
    完整的更新内容请参考[官方公告](/post/geoapi-v2-released/)
-- title: GeoAPI v1
-  ver: v1
+- ver: 1.0
+  product: Geo
   date: 2018-04-09
   status: deprecated
   eol: 2022-12-31
@@ -56,8 +104,8 @@
    * 多语言：支持多远返回数据
    
    完整的更新内容请参考[官方公告](/post/geoapi-v1-released/) 
-- title: Web API s6
-  ver: s6
+- ver: 6.0
+  product: Weather
   date: 2017-10-26
   status: deprecated
   eol: 2022-12-31
@@ -71,8 +119,8 @@
    - 新增海外6个数据节点
    
    完整的更新内容请参考[官方公告](/post/webapi-s6-released/)
-- title: Web API v5
-  ver: v5
+- ver: 5.0
+  product: Weather
   date: 2016-11-06
   status: offline
   eol: 2021-06-30
@@ -93,8 +141,8 @@
    - 修复X3遗留BUG
    
    完整的更新内容请参考[官方公告](/post/webapi-v5-released/)  
-- title: Web API x3
-  ver: x3
+- ver: 3.0
+  product: Weather
   date: 2015-04-12
   status: offline
   eol: 2019-03-31
@@ -105,8 +153,8 @@
    - 支持实况天气、空气质量、生活指数、灾害预警、天气预报等数据
    - 支持中英文
    - 支持国内市县区及5000个热门海外城市
-- title: API v2
-  ver: v2
+- ver: 2.0
+  product: Weather
   date: 2015-02-14
   status: offline
   eol: 2020-12-31
@@ -121,8 +169,8 @@
    - 支持更多天气数据
    - 支持中英文
    - 支持热门海外城市数据
-- title: API v1
-  ver: v1
+- ver: 1.0
+  product: Weather
   date: 2014-01-28
   status: offline
   eol: 2019-12-31
