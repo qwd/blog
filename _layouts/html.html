@@ -22,8 +22,8 @@
     <meta name="msapplication-config" content="/assets/favicon/browserconfig.xml?{{ site.data.v.favicon }}">
     <meta name="theme-color" content="#1a2226">
     <!-- main style -->
-    <link rel="preload" href="/assets/css/style.css?{{ site.data.v.style }}" as="style" />
-    <link rel="stylesheet" href="/assets/css/style.css?{{ site.data.v.style }}" />
+    <link rel="preload" href="/assets/css/style.css?{{ site.time | date: "%s" }}" as="style" />
+    <link rel="stylesheet" href="/assets/css/style.css?{{ site.time | date: "%s" }}" />
     <!-- HTML5 element and Media Queries for IE6-8 -->
     <!--[if lt IE 9]>
     <script src="/assets/js/html5shiv.min.js"></script>
