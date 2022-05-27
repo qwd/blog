@@ -6,11 +6,14 @@ permalink: /release/app/
 
 <h2>下载最新版本</h2>
 <p>请访问<a href="https://www.qweather.com/app/">https://www.qweather.com/app/</a> 获取最新版本</p>
-
 {%- assign release_note = site.data.release-app |  sort: "date" | reverse -%}
 <h2>更新记录</h2>
 {%- for item in release_note -%}
-    <h3 id="{{- item.title | slugify -}}" >{{ item.title }}{%- if forloop.first == true  -%}<span class="label latest">最新</span>{%- endif -%}</h3>
-    <span class="metadata">{{ item.date | date: "%Y-%m-%d" }}</span>
-    {{ item.text | markdownify }}
+    <h3 id="{{- "QWeather APP " | append: item.ver | slugify -}}">{{- "QWeather APP " | append: item.ver -}}</h3>
+    <div class="metadata">
+        <span>{{ item.date | date: "%Y-%m-%d" }}</span>
+    </div>
+    <div class="release-content">
+        {{ item.text | markdownify }}
+    </div>
 {%- endfor -%}
