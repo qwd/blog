@@ -1,3 +1,9 @@
+- ver: "7.10"
+  product: Weather
+  date: 2022-05-28
+  text: |-
+   - 天气预警原`level`数据将由新增`severity`和`severityColor`代替，查看[公告](/announce/warning-levle-is-deprecated/)。
+   - 阿根廷预警更新。
 - ver: 7.9
   product: Weather
   date: 2022-01-31
